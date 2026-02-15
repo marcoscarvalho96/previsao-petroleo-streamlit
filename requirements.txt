@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+plotly
+statsmodels
+pmdarima
+lxml
+html5lib
+scikit-learn
