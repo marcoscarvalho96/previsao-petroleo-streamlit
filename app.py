@@ -17,7 +17,7 @@ st.set_page_config(
 
 st.title("Previsão do Preço do Petróleo (IPEA)")
 st.write("""
-Aplicação desenvolvida para a entrega da atividade da FASE 4 da **Pós Tehc em Data Analytics** da FIAP.  
+Aplicação desenvolvida para a entrega da atividade da FASE 4 da **Pós Tech em Data Analytics** da FIAP.  
 Aluno: Marcos Henrique Carvalho Silva
 RM: 353584
 """)
@@ -122,11 +122,8 @@ fig_comp = px.line(
 
 st.write("""
 Apesar da otimização dos hiperparâmetros do modelo ARIMA, os restulados ainda apresentam limitações relevantes na captura dos padrões do preço de petróleo. 
-
 O preço do petróleo é fortemente influenciado por fatores externos não captados na séries temporal, como eventos geopolíticos, deciões da OPEP, crises econômicas e variações cambiais. 
-
 Modelos univariados como ARIMA assume que o comportamento futuro da série pode ser explicado exclusivamente pelos seus valores passados, o que se mostra ineficiente para captar as variações do petróleo. 
-
 Para melhorias futuras, é recomendado o modelo ARIMAX, atrelado as variáveis externas mencionadas acima, para conseguir de fato capturar as flutuações e ter maior capacidade de interpretação. 
 """)
 st.plotly_chart(fig_comp, use_container_width=True)
@@ -181,3 +178,4 @@ st.download_button(
 
 
 st.success("Aplicação executada com sucesso!")
+
